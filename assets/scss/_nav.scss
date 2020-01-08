@@ -1,0 +1,60 @@
+nav {
+    align-items: center;
+    display: flex;
+    height: 4rem;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding: 0 2rem;
+    width: 100%;
+
+    #site-logo {
+        color: $grey-light;
+        text-decoration: none;
+            
+        h1{
+            font-size: 1.25rem;
+            line-height: 2rem;
+            margin-bottom: 0;
+        }
+
+        span {
+            color: $white;
+        }
+    }
+
+    #site-nav {
+        display: flex;
+
+
+        li {
+            margin-left: 1rem;
+
+            a {
+                color: $grey-light;
+                display: block; 
+                line-height: 2rem;
+                padding: 1rem 0;
+                text-decoration: none;
+
+                &.active {
+
+
+                    a {
+                        cursor: default;
+                    }
+                }
+
+                &:hover:not(.active) {
+                    background-color: $grey-dark;
+                    border-radius: 50%;
+                }
+            }
+
+            &.active {
+                a {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
