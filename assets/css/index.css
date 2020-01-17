@@ -1,0 +1,22 @@
+header {
+  height: 100vh;
+  width: 100vw; }
+
+main .word-effect-flex {
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-flex: 1;
+          flex: 1;
+  -webkit-box-pack: center;
+          justify-content: center; }
+  main .word-effect-flex h1 {
+    font-size: 2rem; }
+    @media only screen and (min-width: 50rem) {
+      main .word-effect-flex h1 {
+        font-size: 3rem; } }
+    @media only screen and (min-width: 75rem) {
+      main .word-effect-flex h1 {
+        font-size: 4rem; } }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Njc3MvaW5kZXguc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQTtFQUNJLGFBQWE7RUFDYixZQUFZLEVBQUE7O0FBR2hCO0VBRVEseUJBQW1CO1VBQW5CLG1CQUFtQjtFQUNuQixvQkFBYTtFQUFiLGFBQWE7RUFDYixtQkFBTztVQUFQLE9BQU87RUFDUCx3QkFBdUI7VUFBdkIsdUJBQXVCLEVBQUE7RUFML0I7SUFRWSxlQUFlLEVBQUE7SUFFZjtNQVZaO1FBV2dCLGVBQWUsRUFBQSxFQU10QjtJQUhHO01BZFo7UUFlZ0IsZUFBZSxFQUFBLEVBRXRCIiwiZmlsZSI6ImluZGV4LmNzcyJ9 */

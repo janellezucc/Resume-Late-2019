@@ -6,9 +6,13 @@
   "scripts": {
     "build-task:scss-compile": "node-sass-chokidar --source-map true assets/scss/ -o assets/css",
     "build-task:autoprefixer": "postcss assets/css/*.css --use autoprefixer -d assets/css",
+    "now-task:mv-html": "rm -rf public && mkdir public && mv index.html public/index.html",
+    "now-task:scss-compile": "node-sass-chokidar --source-map true assets/scss/ -o public/assets/css",
+    "now-task:autoprefixer": "postcss assets/css/*.css --use autoprefixer -d public/assets/css",
     "sass:build": "npm-run-all -p build-task:*",
     "sass:watch": "chokidar 'assets/scss/**/*.scss' -c 'npm run sass:build'",
-    "dev": "npm-run-all -p sass:*"
+    "dev": "npm run sass:watch",
+    "build": "npm-run-all -p now-task:*"
   },
   "keywords": [],
   "author": "",

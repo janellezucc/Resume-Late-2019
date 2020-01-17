@@ -1,0 +1,27 @@
+@import 'variables';
+
+header {
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    .word-effect-flex {
+        align-items: center;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+
+        h1 {
+            font-size: 2rem;
+    
+            @media #{$md-viewport} {
+                font-size: 3rem;
+            }
+    
+            @media #{$lg-viewport} {
+                font-size: 4rem;
+            }
+        }
+    }
+}
